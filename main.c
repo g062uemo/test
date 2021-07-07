@@ -4,7 +4,7 @@
 
 int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
 {
-  int y;
+  double y;
   if( x <= 0 ){
     exit(1);
   }
@@ -21,6 +21,7 @@ int main(void)
     x[i-1] = myRoot((double)i);
     i++;
   }
+
 
   //以下は確認用(このままで良い)
     printf("x[0]=%f\n", x[0]);
