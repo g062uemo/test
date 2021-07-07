@@ -14,12 +14,11 @@ int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないと�
 
 int main(void)
 {
-  int i;
-  i = 0;
+  int i = 1;
   double *x = (double *)malloc(sizeof(double) * 100);
 
   while( i <= 100 ){
-    x[i] = myRoot((double)i);
+    x[i-1] = myRoot((double)i);
     i++;
   }
 
